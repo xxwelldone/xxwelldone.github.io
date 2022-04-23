@@ -1,0 +1,124 @@
+.experience {
+    font-family: Cairo,'Fira Sans', Arial, sans-serif;
+}
+
+.experience-conteiner {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    gap: 10px 70px;
+    align-items: center;
+    justify-items: center;
+    margin: 0px auto;
+    padding: 40px 20px;
+    padding-top: 100px;
+}
+
+.experience-conteiner .subtitle {
+    word-break: break-all;
+   
+    align-self: start;
+    color: #111;
+}
+
+
+.experience-secondblock {
+    justify-self: left;
+}
+
+.experience-conteiner-text {
+    justify-self: left;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    max-width: 50ch;
+}
+.job-experience {
+    grid-column: 2;
+    justify-self: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+}
+.job-experience li {
+    transition: 0.5s;
+    border-left: 5px solid var(--rosa) ;
+    border-right: 5px solid var(--rosa) ;
+   
+}
+.job-experience li:hover {
+    border-left:5px solid var(--azul);
+    border-right:5px solid var(--azul);
+}
+.jobs {
+    padding: 20px;
+    color: #111;
+    background-color: var(--rosa);
+    margin: 20px 0px;
+    border-left: 5px solid #111;
+    transition: 0.5s; 
+    
+    
+}
+.job-year {
+    color:#fff;
+    font-weight: bold;
+   
+}
+.job-description {
+    max-width: 40ch;
+}
+
+@media (max-width: 910px) {
+    
+    .experience-conteiner .subtitle {
+        
+         font-size:  8rem;
+     }
+}
+@media (max-width: 800px) {
+    .experience-conteiner .subtitle {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .experience-conteiner {
+        grid-template-columns: 1fr;
+        padding-top: 10px;
+    }
+
+    .job-experience {
+        flex-direction: column;
+
+    }
+   
+    .experience-conteiner .subtitle {
+       min-width: 6ch;
+        word-break:keep-all;
+        font-size:  4rem;
+        margin: 0px 20px; 
+        margin-bottom: 15px;
+        padding: 30px;
+       position: relative;
+        color: #111;
+        display: block;
+    }
+    .experience-conteiner .subtitle::before {
+        content: "";
+        width: 10px;
+        height: 50px;
+        left : -10px;
+        background-color: var(--azul);
+        position: absolute;
+    }
+    .experience-conteiner-text {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 490px) {
+    .experience-conteiner .subtitle{
+        font-size: 2rem;
+    }
+}

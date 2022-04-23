@@ -1,0 +1,40 @@
+body {
+    font-family: Cairo,'Fira Sans', Arial, sans-serif;
+    margin: 0px;
+    color: #141414;
+}
+
+header,
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --rosa:#E50CD0;
+    --rosa-claro: #e50ccf85;
+    --azul:#08cafa;
+}
+
+.subtitle {
+    font-size: 10rem;
+    font-weight: 1000;
+    line-height: 0.8;
+
+    justify-self: left;
+    
+}
+

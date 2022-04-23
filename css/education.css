@@ -1,0 +1,114 @@
+
+.education {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0px auto;
+    padding: 40px 20px;
+    padding-top: 100px;
+    gap: 70px;
+    
+}
+
+.education-text {
+    justify-self: left;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    max-width: 50ch;
+    grid-row: 1 ;
+}
+
+.education .subtitle {
+    grid-column: 1;
+    grid-row: 1/-1;
+    position: relative;
+    align-self: start;
+    color: #111;
+    word-break: break-all;
+    max-width: 4ch;
+    
+    
+}
+/*.education h2::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 380px;
+    background-color: var(--rosa);
+    position: absolute;
+    top:0px;
+    left: 380px;
+    z-index: -1;
+ ransform: rotate(15deg);
+}*/
+
+.education-courses {
+    justify-self: left;
+    
+}
+.education-courses-pink {
+    padding: 20px;
+    color: #111;
+    background-color: var(--rosa);
+    margin: 20px 0px;
+    border-left: 5px solid #111;
+    transition: 0.5s; 
+}
+.education-courses-pink:hover {
+    border-left:5px solid var(--azul);
+}
+
+
+
+
+@media (max-width: 910px) {
+    .education{
+        padding-top: 40px;
+    }
+    .education .subtitle {
+        
+         font-size:  8rem;
+     }
+}
+@media (max-width: 800px) {
+    .education .subtitle {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .education {
+        grid-template-columns: 1fr;
+        padding-top: 10px;
+    }
+    .education .subtitle {
+        max-width:initial;
+        min-width: 4ch;
+        word-break: keep-all;
+        font-size:  4rem;
+        margin: 0px 20px; 
+        margin-bottom: 15px;
+        padding: 30px;
+        position: relative;
+        color: #111;
+        display: block;
+    }
+    .education .subtitle::before {
+        content: "";
+        width: 10px;
+        height: 50px;
+        left : -10px;
+        background-color: var(--azul);
+        position: absolute;
+    }
+    .education-text {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 490px) {
+    .education .subtitle{
+        font-size: 2rem;
+    }
+}

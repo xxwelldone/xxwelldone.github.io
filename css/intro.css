@@ -1,0 +1,100 @@
+
+.intro{
+    max-width: 1200px;
+    padding: 40px 20px;
+   margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 70px;
+    align-items: center; 
+    padding-bottom: 150px;
+}
+
+.intro span {
+    color: var(--rosa);
+    padding: 5px;
+    font-weight:600;  
+}
+.intro h1 {
+    font-size: 4.5rem;
+    line-height: 1.125;
+    position: relative;
+    
+}
+.intro-text p {
+    margin-top: 15px;
+    max-width: 50ch;
+    font-size: 1.35rem;
+    line-height: 1.5;
+}
+.intro-text h1::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 160px;
+    background-color: var(--rosa);
+    position: absolute;
+    left: -20px;
+    z-index: -1;
+}
+
+@media (max-width:960px) {
+    .intro {
+        gap: 50px
+    }
+    .intro-text h1 {
+        font-size: 2rem;
+        
+    }
+        .intro-text h1::before{
+            height: 35px;
+            width: 5px;
+            left: -10px;
+            
+    }}
+@media (max-width: 930px) {
+    .intro {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+        gap: 50px
+    }
+    .intro-text h1::before{
+        height: 70px;
+        width: 5px;
+        left: -10px;
+}}
+@media (max-width: 690px) {
+    .intro-text h1::before{
+        height: 70px;
+        width: 5px;
+        left: -10px;
+}
+}
+@media (max-width: 640px) {
+    .intro-text h1::before{
+        height: 110px;
+        width: 5px;
+        left: -10px;
+}
+}
+
+@media (max-width: 780px) {
+   .intro { grid-template-columns: 1fr ;
+}
+}
+
+@media (max-width: 570px) {
+    .intro-text h1 {
+        padding: 15px;
+        background-color: var(--rosa);
+        color: #fff;
+ }
+ .intro-text span {
+     color: #000;
+ }
+ .intro-text h1::before {
+     display: none;
+ }
+ }
+
+
