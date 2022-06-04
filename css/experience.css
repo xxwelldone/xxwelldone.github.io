@@ -53,6 +53,7 @@
 }
 .jobs {
     padding: 20px;
+    max-width:559px;
     color: #111;
     background-color: var(--rosa);
     margin: 20px 0px;
@@ -67,7 +68,7 @@
    
 }
 .job-description {
-    max-width: 40ch;
+    max-width: 70ch;
 }
 
 @media (max-width: 910px) {
